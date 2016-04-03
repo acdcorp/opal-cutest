@@ -7,7 +7,7 @@ class Cutest
 
   def self.run_file(file)
     begin
-      `require('app/test/sample_test.rb')`
+      require file
 
     rescue LoadError, SyntaxError
       display_error
